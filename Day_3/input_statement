@@ -1,0 +1,128 @@
+Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+age=int(input())
+20
+age
+20
+name=input()
+keerthi
+name
+'keerthi'
+price=float(input())
+56.78
+price
+56.78
+name=input().split()
+karla keerthi
+name
+['karla', 'keerthi']
+l=list(map(int,input().split()))
+1 2 3 4 5
+l
+[1, 2, 3, 4, 5]
+l=list(map(float,input().split()))
+1 2 3 4 5
+l
+[1.0, 2.0, 3.0, 4.0, 5.0]
+l=list(map(input().split()))
+1 2 3 4 5
+Traceback (most recent call last):
+  File "<pyshell#12>", line 1, in <module>
+    l=list(map(input().split()))
+TypeError: map() must have at least two arguments.
+l=list(map(input().split()))
+karla keerthi
+Traceback (most recent call last):
+  File "<pyshell#13>", line 1, in <module>
+    l=list(map(input().split()))
+TypeError: map() must have at least two arguments.
+l
+[1.0, 2.0, 3.0, 4.0, 5.0]
+t=tuple(map(int,input().split()))
+1 2 3 4 5
+t
+(1, 2, 3, 4, 5)
+t=tuple(map(float,input().split()))
+1 2 3 4 5
+t
+(1.0, 2.0, 3.0, 4.0, 5.0)
+s=set(map(int,input().split()))
+1 2 3 4 5
+s
+{1, 2, 3, 4, 5}
+s=set(map(float,input().split()))
+1 2 3 4 5
+s
+{1.0, 2.0, 3.0, 4.0, 5.0}
+l=list(input().split())
+karla keerthi
+l
+['karla', 'keerthi']
+t=tuple(input().split())
+karla keerthi
+t
+('karla', 'keerthi')
+s=set(input().split())
+karla keerthi
+s
+{'karla', 'keerthi'}
+d=eval()
+Traceback (most recent call last):
+  File "<pyshell#29>", line 1, in <module>
+    d=eval()
+TypeError: eval expected at least 1 argument, got 0
+d=eval(input().split())
+{1:1,2:4,3:9}
+Traceback (most recent call last):
+  File "<pyshell#30>", line 1, in <module>
+    d=eval(input().split())
+TypeError: eval() arg 1 must be a string, bytes or code object
+d=eval(input())
+d=eval(input())
+Traceback (most recent call last):
+  File "<pyshell#31>", line 1, in <module>
+    d=eval(input())
+  File "<string>", line 1
+    d=eval(input())
+     ^
+SyntaxError: invalid syntax
+d=eval(input("enter the input"))
+enter the input[1,2,3,4,5]
+d
+[1, 2, 3, 4, 5]
+d=dict(.
+       
+SyntaxError: invalid syntax
+d=eval(input())
+       
+
+Traceback (most recent call last):
+  File "<pyshell#35>", line 1, in <module>
+    d=eval(input())
+  File "<string>", line 0
+    
+SyntaxError: unexpected EOF while parsing
+d=eval(input())
+       
+{1:1,2:4,3:9}
+
+u,p=['py','py@124']
+       
+u
+       
+'py'
+p
+       
+'py@124'
+a,b,c=list(map(int,input().split()))
+       
+1 2 3 
+a
+       
+1
+b
+       
+2
+c
+       
+3
