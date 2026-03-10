@@ -1,0 +1,64 @@
+# if examples
+
+'''min_balance=5000
+current_balance=2000
+if (current_balance<min_balance):
+    print("Send message and cut some amount")
+
+mincharge=20
+current_charge=100
+if(current_charge<mincharge):
+    print("Connect your charger")
+
+#if else examples
+
+data=('data@gmail.com','data@123')
+mail=input('Enter mail')
+password=input('enter password')
+if data==(mail,password):
+    print("Login successful")
+else:
+    print("invalid login")
+
+
+fruits=['apple','mango','banana','grapes']
+search_item=input("Search items here:")
+if search_item in fruits:
+    print(f" {search_item} found ! Buy now")
+else:
+    print(f"{search_item} is out of stock ")
+
+
+# elif examples
+
+time=int(input("Enter the hour"))
+print('The available buses are')
+if 0<=time<=6:
+    print(" bus1\nbus2")
+elif 7<=time<=12:
+    print("bus3\nbus4")
+elif 13<=time<=18:
+    print("bus5\nbus6")
+elif 19<=time<=24:
+    print("bus7\nbus8")
+else:
+    print("Enter the time in the given range")'''
+
+print("1.bike\n2.auto\n3.car")
+user_choice=int(input("Choose the option: "))
+if user_choice==1:
+    print("You have booked the bike successfully")
+elif user_choice==2:
+    print("You have booked the auto successfully")
+elif user_choice==3:
+    print("You have booked the car successfully")
+else:
+    print("choose the correct option")
+
+
+
+
+
+
+
+
