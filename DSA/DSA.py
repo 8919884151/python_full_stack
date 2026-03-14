@@ -124,7 +124,110 @@ n=int(input("Enter the number of rows: "))
 for i in range(n+1,1,-1):      1 2 3
     for j in range(1,i):       1 2
         print(j,end=" ")       1
-    print()'''
+    print()
+
+#counting characters in the string
+name=input("Enter the name: ")
+c=0
+for i in range(len(name)):
+    c=c+1
+print(c) #keerthi count =7 
+
+#printing even index characters
+name=input("Enter name: ") #keerthi
+for i in range(len(name)):
+    if(i%2==0):
+        print(name[i]) #keti
+
+#count occurances of specific character
+name=input("Enter name: ") #keerthi
+ch=input("Enter char: ") #e
+c=0
+for i in range(len(name)):
+    if(name[i]==ch):
+        c=c+1
+print(c) #2
+
+#count vowels in string
+name=input("Enter name: ")
+c=0
+for i in range(len(name)):
+    if(name[i]=='a' or name[i]=='e' or name[i]=='i' or name[i]=='o'or name[i]=='u' or name[i]=='A' or name[i]=='E' or name[i]=='I' or name[i]=='O' or name[i]=='U' ):
+        c=c+1
+print(c)
+
+#another program of vowels count
+c=0
+name=input("Enter name: ") #keerthi
+vowels="aeiouAEIOU"
+for i in range(len(name)):
+    if name[i] in vowels:
+        c=c+1
+print(c) #3
+
+#number count in string
+name=input("Enter name: ") #k3h4j5h6
+c=0
+numbers="0123456789"
+for i in range(len(name)):
+    if name[i] in numbers:
+        c=c+1
+print(c)             #4
+
+#sum of numbers in string
+name=input("Enter name: ")  #k3h4j5h6
+sum=0
+numbers="0123456789"
+for i in range(len(name)):
+    if name[i] in numbers:
+        sum+=int(name[i])
+print(sum)               #18
+ 
+ #Reverse the string
+name=input("Enter name: ")  #code
+reverse=""
+for i in range(len(name)):
+    reverse=name[i]+reverse
+print(reverse)            #edoc    
+
+#reversing the string using slicing
+name=input("Enter name: ")
+print(name[::-1])  
+ 
+#check palindrome
+n=input("Enter name: ")
+reverse=n[::-1]
+if(n==reverse):
+    print("palindrome")
+else:
+    print("not palindrome")
+
+#count words
+n=input("Enter the sentence: ")
+c=1
+for i in range(len(n)):
+    if(n[i]==" "):
+        c=c+1
+print(c)
+
+#check anagrams
+s1=input("Enter string1: ")
+s2=input("Enter string2: ")
+l1=sorted(s1)
+l2=sorted(s2)
+if(l1==l2):
+    print("Anagram")
+else:
+    print("Not anagram")'''
+
+
+
+
+
+
+
+
+    
 
 
 
