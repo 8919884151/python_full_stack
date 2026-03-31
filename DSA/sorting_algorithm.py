@@ -36,7 +36,7 @@ def insert_into_sorted(a,x):
     return a
 a=[1,3,5,7]
 x=4
-print(insert_into_sorted(a,x))'''
+print(insert_into_sorted(a,x))
 
 #Quick sort
 
@@ -53,7 +53,38 @@ def quick_sort(a):
             right.append(i)
     return quick_sort(left)+[pivot]+quick_sort(right)
 a=[5,2,4,1,0]
-print(quick_sort(a))
+print(quick_sort(a))'''
+
+#merge sort
+
+def merge_sort(a):
+    if len(a)<=1:
+        return a
+    mid=len(a)//2
+    left=merge_sort(a[:mid])
+    right=merge_sort(a[mid:])
+    return merge(left,right)
+
+def merge(left,right):
+    result=[]
+    i=j=0
+    while i<len(left) and j<len(right):
+        if left[i]<right[j]:
+            result.append(left[i])
+            i=i+1
+        else:
+            result.append(right[j])
+            j=j+1
+
+    result.extend(left[i:])
+    result.extend(right[j:])
+    return result
+a=[5,2,4,1]
+sorted_a=merge_sort(a)
+print(a)
+print(sorted_a)
+
+
 
 
 
