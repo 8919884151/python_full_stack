@@ -218,7 +218,7 @@ l2=sorted(s2)
 if(l1==l2):
     print("Anagram")
 else:
-    print("Not anagram")'''
+    print("Not anagram")
 
 n=4
 for i in range(n):
@@ -228,6 +228,84 @@ for i in range(n):
         else:
             print(" ",end="")
     print()
+
+n=int(input())
+p=0
+for i in range(n):
+    for j in range(i+1):
+        print(p,end=" ")
+    p=p+2
+    print()
+
+n=int(input())
+for i in range(n):
+    for j in range(i+1):
+        print(" ",end=" ")
+    for j in range(n-i-1):
+        print("*",end=" ")
+    print()
+
+n=int(input())
+for i in range(n):
+    for j in range(n-i-1):
+        print("",end=" ")
+    for j in range(i+1):
+        print("*",end=" ")
+    print()
+
+n=int(input())
+for i in range(n):
+    for j in range(i):
+        print("",end=" ")
+    for j in range(n-i):
+        print("*",end=" ")
+    print()
+
+n=int(input())
+for i in range(n):
+    for j in range(n-i-1):
+        print(" ",end=" ")
+    for j in range(i+1):
+        print("*",end=" ")
+    print()
+
+n=int(input())
+for i in range(n):
+    for j in range(i):
+        print(" ",end=" ")
+    for j in range(n-i):
+        print("*",end=" ")
+    print()
+
+s="PYTHON"
+for i in range(len(s),0,-1):
+    print(s[:i])
+
+s="PYTHON"
+for i in range(1,len(s)+1):
+    print(s[:i])
+
+s="PYTHON"
+for i in range(1,len(s)+1):
+    print(s[i:])
+
+s="PYTHON"
+for i in range(len(s),0,-1):
+    print(s[i:])
+
+n=int(input())
+for i in range(n):
+    for j in range(i+1):
+        print(chr(65+j),end=" ")
+    print()'''
+
+n=int(input())
+for i in range(n):
+    for j in range(i,n):
+        print(chr(65+j),end=" ")
+    print()
+
+
 
         
 
